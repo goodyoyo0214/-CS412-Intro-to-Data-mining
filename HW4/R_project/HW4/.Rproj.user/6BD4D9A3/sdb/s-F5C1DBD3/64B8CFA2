@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#------knn------\n# knn test set all\nid = c(11,12,13,14)\nx1 =c(1.9,2.7,0.6,3.4)\nx2 = c(1.0,1.8,2.1,2.4)\ny = c(-1,+1,-1,-1)\nq2Data.Test = data.frame(x1,x2,y)\nq2Data.Test.att = q2Data.Test[,c(1,2,3)]\nq2Data.Test.lable = q2Data.Test[,c(4)]\n\n# knn test set one by one\nq2DataID11.Test = data.frame(id=11,x1=1.9,x2=1.0,y=-1)\nq2DataID11.Test.att = q2DataID11.Test[,c(2,3)]\nq2DataID11.Test.lable = q2DataID11.Test[,c(4)]\n\nq2DataID12.Test.att = q2Data.Test[2,c(1,2)]\nq2DataID13.Test.att = q2Data.Test[3,c(1,2)]\nq2DataID14.Test.att = q2Data.Test[4,c(1,2)]\n\n\n# knn training set\nid = c(1,2,3,4,5,6,7,8,9,10)\nx1 =c(1.6,3.7,1.1,2.5,0.4,4.0,3.4,2.6,2,3.7)\nx2 = c(1.1,2.2,3.1,3.7,0.6,0.5,2.9,0.5,1,1.4)\ny = c(1,-1,1,1,1,-1,1,-1,-1,-1)\nq2Data.Train = data.frame(x1,x2,y)\nq2Data.Train.att = q2Data.Train[,c(1,2)]\nq2Data.Train.lable = q2Data.Train[,c(3)]\n\n# knn result one by one\nclassSet11 = knn(q2Data.Train.att, q2DataID11.Test.att, q2Data.Train.lable, k = 3)\nclassSet12 = knn(q2Data.Train.att, q2DataID12.Test.att, q2Data.Train.lable, k = 3)\nclassSet13 = knn(q2Data.Train.att, q2DataID13.Test.att, q2Data.Train.lable, k = 3)\nclassSet14 = knn(q2Data.Train.att, q2DataID14.Test.att, q2Data.Train.lable, k = 3)\n\n#-----k-means-----\n#k-means test set\nid = c(1,2,3,4,5,6,7,8,9)\nx = c(8.2,0.1,1.5,2.2,1.6,4.3,2.5,6.2,5.5)\ny = c(6.4,6.7,7.8,3.4,3.5,9.7,2.2,3.1,0.3)\nq3dataSet = data.frame(id,x,y)\nq3data = q3dataSet[,c(2,3)]\n#c(2.0, 5.0),c(6.0, 0.5),c(6.0, 5.0)\niniCent = data.frame(c(2.0, 6.0,5.0),c(5.0,0.5,5.0))\niniCent2 = data.frame(c(1.0, 0.2,4.3),c(4.0,6.0,2.0))\n\ntest = kmeans(q3data, iniCent)\ntest2 = kmeans(q3data, iniCent2)\n\n",
+    "created" : 1480564901109.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1682216262",
+    "id" : "64B8CFA2",
+    "lastKnownWriteTime" : 1480914308,
+    "last_content_update" : 1480914308635,
+    "path" : "D:/abroad/UIUC/Courses/CS412-Intro to Data Mining/HW5/R/R.R",
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

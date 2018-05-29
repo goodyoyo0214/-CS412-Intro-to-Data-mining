@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1480883452719.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "50373500",
+    "lastKnownWriteTime" : 18859025310613605,
+    "last_content_update" : 1480883452719,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "p36c2ubfyv",
+        "caption" : "q3dataSet",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=q3dataSet&cache_key=p36c2ubfyv",
+        "displayedObservations" : 9,
+        "environment" : "",
+        "object" : "q3dataSet",
+        "totalObservations" : 9,
+        "variables" : 3
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

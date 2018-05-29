@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "dist(data.supermarkets , method = \"minkowski\" , p=1)\ndist(data.supermarkets , method = \"minkowski\" , p=2)\ndist(data.supermarkets , method = \"maximum\")\ndist(data.supermarkets[2,],data.supermarkets[1,], js , method =\"cosine\")\n\n\njs<- data.supermarkets[1,]\ndata.supermarkets = data.supermarkets[-\"supermarket\"]\n\nsummary(data.online$V2)\nvar(data.online$V2)\nwhich.max(table(data.online$V2))\nscale(data.online$V2, center = TRUE, scale = TRUE)\nscale.data<-scale(data.online$V2, center = TRUE, scale = TRUE)\n\nvar(scale.data)\ncor(data.online$V2,data.online$V3, method = \"pearson\")\ncov(data.online$V2,data.online$V3)\n\nsumJs <- sum(data.supermarkets[1,])\nsumkk <- sum(data.supermarkets[2,])\n\njs<-js/sumJs\nkk<-kk/sumkk\n\njs<-as.vector(c(data.supermarket.p[1,]),mode=\"numeric\")\nkk<-as.vector(c(data.supermarket.p[2,]),mode=\"numeric\")\n\n\nz <- c(1,2)\n\ndata.supermarket.p <- data.supermarkets\ndata.supermarket.p[1,]<-data.supermarket.p[1,]/sumJs\ndata.supermarket.p[2,]<-data.supermarket.p[2,]/sumkk\n\nKLD(js,kk)\n\ny <- c(1346,430)\nn <- c(133,32974)\ndf <- data.frame(y,n)  \nnames(df)[,1]<-paste(\"n\")\nchisq.test(df)",
+    "created" : 1473100525994.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3873410623",
+    "id" : "B32D035C",
+    "lastKnownWriteTime" : 1473390014,
+    "last_content_update" : 1473390014244,
+    "path" : "D:/abroad/UIUC/Courses/CS412-Intro to Data Mining/HW1/RWorkstation_CS412/Q4.R",
+    "project_path" : "Q4.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

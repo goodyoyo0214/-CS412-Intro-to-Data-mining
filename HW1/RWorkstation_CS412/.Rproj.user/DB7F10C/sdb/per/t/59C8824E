@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1473381992643.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "59C8824E",
+    "lastKnownWriteTime" : 7308604914264011873,
+    "last_content_update" : 1473381992643,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "07la74omse",
+        "caption" : "scale.data",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=scale.data&cache_key=07la74omse",
+        "displayedObservations" : 1000,
+        "environment" : "",
+        "object" : "scale.data",
+        "totalObservations" : 1000,
+        "variables" : 1
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

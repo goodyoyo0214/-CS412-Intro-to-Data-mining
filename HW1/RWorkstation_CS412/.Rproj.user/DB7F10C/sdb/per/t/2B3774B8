@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1473345219239.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2B3774B8",
+    "lastKnownWriteTime" : 5292976843906638626,
+    "last_content_update" : 1473345219239,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "kb10vxbard",
+        "caption" : "data.online",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=data.online&cache_key=kb10vxbard",
+        "displayedObservations" : 1000,
+        "environment" : "",
+        "object" : "data.online",
+        "totalObservations" : 1000,
+        "variables" : 3
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

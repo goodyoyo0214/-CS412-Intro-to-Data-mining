@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "\n#用read.csv讀進會變成dataframe\n#transaction = read.csv(file=\"D:/abroad/UIUC/Courses/CS412-Intro to Data Mining/HW2/data.transaction.csv\",header = F)\n\n#用arules內建的方法讀成transaction data\ntransaction = read.transactions(\"D:/abroad/UIUC/Courses/CS412-Intro to Data Mining/HW3/Result/topicInt/topic-4.txt\", sep=\" \")\n\n#all pattern minsup=0.01\nq3_1a=apriori(transaction,parameter=list(support=0.01, confidence = 0))\ninspect(q3_1a)\n\n#lenth == 3, support = 0.2\n#q3_1b = apriori(transaction,parameter=list(support=0.2, confidence = 0, maxlen = 3 ,minlen=3))\n#inspect(q3_1b)\n\n#max frequent item sup=0.01\nq3_1c = apriori(transaction,parameter=list(support=0.01, confidence = 0, target = \"maximally frequent itemsets\"))\ninspect(q3_1c)\n\n\n\n\n#all pattern support = 0.1\nq3_2a = apriori(transaction,parameter=list(support=0.1, confidence = 0))\ninspect(q3_2a)\n\n#lengh == 3 , support = 0.1\nq3_2b = apriori(transaction,parameter=list(support=0.1, confidence = 0, maxlen = 3 ,minlen=3))\ninspect(q3_2b)\n\n#max frequent item sup=0.1\nq3_2c = apriori(transaction,parameter=list(support=0.1, confidence = 0, target = \"maximally frequent itemsets\"))\ninspect(q3_2c)\n\nq3_2d = apriori(transaction, parameter=list(support=0.1, confidence = 0))\ninspect(q3_2d)\n\n\n",
+    "created" : 1475448726026.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1003478195",
+    "id" : "F3729848",
+    "lastKnownWriteTime" : 1477895196,
+    "last_content_update" : 1477895196697,
+    "path" : "D:/abroad/UIUC/Courses/CS412-Intro to Data Mining/HW2/RProject/TestAssociation.R",
+    "project_path" : "TestAssociation.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
